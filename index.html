@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--  Programmer : Maya Ahmed 
+      Files: index.html;
+      These file contains the codes for making a image gallery.
+      Date: "Aug 29 2016" -->
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Punjiri: Web and Mobile Technologies.</title>
+		<link rel="stylesheet" type="text/css" href="reminder.css">
+
+	</head>
+
+	<body>
+		<div id="big_wrapper">
+          <div id="topStuff">
+          <header id="top_header">
+				<p>Nurse Aid</p>
+			</header>
+		
+
+          <nav id="top_menu">
+			
+	          <ul>
+                <li>
+                    <div id="myNav" class="overlay">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+                      <div class="overlay-content">
+                       <p> &copy; Punjiri Web and Mobile Technologies, 2016. </p>
+                       <p> Email: maya.ahmed@gmail.com</p>
+                      </div>
+                    </div>
+
+                    <span style="font-size:30px; cursor:pointer" onclick="openNav()"> &equiv;</span>
+                  </li>
+                                    
+                </ul>
+			</nav>
+            </div>
+     
+
+<div id="setAlarmDiv">
+Enter time (24 hour format) to set alarm:
+      <input type=text id="inputValue" value="21">
+     <input id="submitButton" type=button onclick="run()" value="submit">
+
+</div>
+
+<div id="clockDiv">
+
+</div>
+
+
+
+
+</div>
+
+ <script src="reminder.js"></script> 
+
+
+      
+</body>
+</html>
