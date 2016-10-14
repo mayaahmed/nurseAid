@@ -14,7 +14,8 @@
 	</head>
 
 	<body>
-		<div id="big_wrapper">
+	
+	  <div id="big_wrapper">
           <div id="topStuff">
           <header id="top_header">
 				<p>Nurse Aid</p>
@@ -41,21 +42,32 @@
             </div>
      
 
-<div id="setAlarmDiv">
-Enter time (24 hour format) to set alarm:
+
+<div id="container">
+<div class="listingButton" onclick="slideOpen(setAlarmDiv)"> Schedule Medicine Times</div>
+<div class="lightBorder" id="setAlarmDiv">
+ <input type="button" class="closeButtonOptions" id="setAlarmButton" value="&times"
+         onclick="slideClose(setAlarmDiv, 'setAlarmButton')"> 
+
+<h4> Set Alarm: </h4> Enter time (24 hour format) to set alarm:
       <input type=text id="inputValue" value="21">
-     <input id="submitButton" type=button onclick="run()" value="submit">
+  
+
+<h4> Edit Prescription: </h4>
+<textarea  id="prescriptionValue"> </textarea>
+     <input id="submitButton" type=button onclick="run()" value="Submit">
 
 </div>
+
 
 <div id="clockDiv">
 
 </div>
 
-
-
-
 </div>
+
+
+</div> <!-- wrapper -->
 
  <script src="reminder.js"></script> 
 
