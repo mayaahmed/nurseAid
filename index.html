@@ -13,10 +13,12 @@
 
 	</head>
 
-	<body>
+	<body onload="init()">
 	
 	  <div id="big_wrapper">
-          <div id="topStuff">
+          
+
+        <div id="topStuff">
           <header id="top_header">
 				<p>Nurse Aid</p>
 			</header>
@@ -41,33 +43,73 @@
 			</nav>
             </div>
      
-
+<div id="messageDiv"> </div>
 
 <div id="container">
-<div class="listingButton" onclick="slideOpen(setAlarmDiv)"> Schedule Medicine Times</div>
-<div class="lightBorder" id="setAlarmDiv">
- <input type="button" class="closeButtonOptions" id="setAlarmButton" value="&times"
-         onclick="slideClose(setAlarmDiv, 'setAlarmButton')"> 
 
-<h4> Set Alarm: </h4> Enter time (24 hour format) to set alarm:
-      <input type=text id="inputValue" value="21">
+
+<p> <input class="choiceButton"  type=button  onclick="slideOpen2(editScheduleDiv)" value="Edit Schedule"></p>
+
+
+<div id="scheduleDisplayDiv"> 
+<table id="scheduleTable">
+<tr>
+<td> Index </td>
+<td> Time </td>
+<td> Prescription </td>
+</tr>
+</table>
+</div>
+
+
+<div id="scheduleDiv">
+
+
+<div class="lightBorder" id="editScheduleDiv">
+ <input type="button" class="closeButtonOptions" id="editScheduleButton" value="&times"
+         onclick="slideClose(editScheduleDiv, 'editScheduleButton')"> 
+
+<input id="editButton" class="choiceButton"  type=button onclick="slideOpen(addNewDiv)"  value="Add New">
+<div class="lightBorder" id="addNewDiv">
+ <input type="button" class="closeButtonOptions" id="addNewButton" value="&times"
+         onclick="slideClose(addNewDiv, 'addNewButton')"> 
+
+<h4> Set Alarm Timing: </h4> Enter time (24 hour format) to set alarm:
+      <input type=text id="inputValue" >
   
 
-<h4> Edit Prescription: </h4>
+<h4> Enter Prescription: </h4>
 <textarea  id="prescriptionValue"> </textarea>
-     <input id="submitButton" type=button onclick="run()" value="Submit">
+     <input id="submitButton" class="submitButton"  type=button onclick="run()"  value="Submit">
+ 
+</div>  <!-- addnewDiv -->
 
-</div>
+<input id="editButton" class="choiceButton"  type=button onclick="slideOpen(editCellDiv)"  value="Edit Cell">
+<div id="editCellDiv"  class="lightBorder">
+<input type="button" class="closeButtonOptions" id="editCellButton" value="&times"
+         onclick="slideClose(editCellDiv, 'editCellButton')"> 
+
+<p> Index Number:  <input type=text id="editNumber" value="1"> </p>
+
+<p> Time:  <input type=text id="editValue" value="12" >
+<input id="submitTimeButton" class="submitButton"  type=button onclick="editIndex()"  value="Submit"> </p>
+<p> Prescription: <textarea  id="editprescriptionValue"> </textarea> </p>
+ <input id="submit2Button" class="submitButton"  type=button onclick="editList()"  value="Submit">
+
+</div> <!-- editCellDiv -->
+
+<input id="deleteCellButton" class="choiceButton"  type=button onclick="deleteCell()"  value="Delete Cell">
+
+<input id="clearAllButton" class="choiceButton"  type=button onclick="clearAll()"  value="clear All">
+
+</div> <!-- editScheduleDiv -->
 
 
-<div id="clockDiv">
 
-</div>
-
-</div>
-
+</div> <!-- container -->
 
 </div> <!-- wrapper -->
+
 
  <script src="reminder.js"></script> 
 

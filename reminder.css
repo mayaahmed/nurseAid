@@ -22,31 +22,19 @@ body{
 	display:-webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-box-flex: 1;
+// border: 3px solid red;
 }
 
 h4{
 padding: 8px;
 }
 
-#inputValue{
+input[type=text]{
 width: 40px;
 }
 
-#submitButton{
-width: 100px;
-height: 30px;
-background: khaki;
-border-radius: 10px;
-opacity: 0.8;
-margin: 5px;
-}
 
-#submitButton:hover{
-opacity: 1;
-width: 101px;
-height: 31px;
 
-}
 
 #topStuff{
 
@@ -86,8 +74,6 @@ font:  19px Tahoma;
 	font: bold 25px Tahoma;
     color: khaki;
 }
-
-
 
 
 
@@ -153,40 +139,76 @@ font:  19px Tahoma;
   }
 }
 
-
-.listingButton{
-position: relative;
-z-index:  2;
-width: 250px;
-height: 25px;
-border: 1px solid gray;
-box-shadow: inset 2px 2px 1px rgba(0,0,0,0.2);
-text-shadow: 1px 1px 1px black;
-opacity:0.8;
-border-radius: 5px;
-font-size: 18px;
+.choiceButton{
+width: 270px;
+height: 30px;
+line-height: 30px;
 background: khaki;
-margin-top: 3px;
-margin-bottom: 3px;
-padding: 5px;
-text-align: center;
-line-height: 25px;
+border: 1px solid  rgba(0,0,0,0.4);
+// border-radius: 10px;
+box-shadow: inset 1px 1px 4px rgba(0,0,0,0.4);
+opacity: 0.8;
+margin: 10px;
+
+text-shadow: 1px 1px 2px white;
+// color: khaki;
+font-size: 18px;
 }
 
-.listingButton:hover{
+.choiceButton:hover{
 opacity: 1;
-width:251px;
-height:26px;
-overflow: hidden;
+width: 271px;
+height: 31px;
+
 }
 
 
+
+.submitButton{
+width: 100px;
+height: 30px;
+line-height: 30px;
+background: khaki;
+border: 1px solid rgba(0,0,0,0.4);
+ border-radius: 5px;
+box-shadow: inset 1px 1px 4px rgba(0,0,0,0.4);
+opacity: 0.8;
+margin: 10px;
+
+text-shadow: 1px 1px 2px white;
+// color: khaki;
+font-size: 18px;
+}
+
+.submitButton:hover{
+opacity: 1;
+width: 101px;
+height: 31px;
+
+}
+
+.closeButtonOptions{
+opacity: 0.8;
+width: 30px;
+height: 30px;
+margin: 5px;
+font-size: 22px;
+line-height: 30px;
+border: 1px solid khaki;
+box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+.closeButtonOptions:hover{
+opacity: 1;
+width: 31px;
+height: 31px;
+}
 
 .lightBorder {
  position: relative;
  z-index: 5;
     height: 0px;
-    width: 250px;
+    width: 240px;
     background: beige;
     opacity: 0.8;
     overflow: hidden;
@@ -195,15 +217,61 @@ font-size: 20px;
 padding-left: 20px;
 }
 
-#clockDiv{
-opacity: .8;
-margin-top: 20px;
-// background: khaki;
-color: khaki;
-font-size: 22px;
-}
+
+
 
 #container{
-border: 1px solid khaki;
+// border: 5px solid khaki;
+// border: 1px solid khaki;
 margin: 20px;
+padding: 20px;
+width: 80%
+}
+
+
+#editScheduleDiv{
+width: 320px;
+border: 5px solid green;
+float: left;
+}
+
+
+
+#scheduleDiv{
+// border: 5px solid green;
+float: left;
+padding: 10px;
+width: 300px;
+}
+
+
+#scheduleDisplayDiv{
+float: left;
+border: 5px solid green;
+// border: 1px solid khaki;
+width: 250px;
+opacity: .8;
+padding: 10px;
+background: beige;
+// color: khaki;
+font-size: 20px;
+margin: 10px;
+}
+
+#messageDiv{
+
+color: khaki;
+font-size: 22px;
+padding: 5px;
+text-align: center;
+opacity: 0.8;
+// width: 150px;
+// border: 1px solid khaki;
+}
+
+
+table, td {
+    border: 3px solid khaki;
+padding: 5px;
+margin: 0px auto;
 }
